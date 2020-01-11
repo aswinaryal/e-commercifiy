@@ -1,23 +1,12 @@
-import React, {Component} from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import HomePage from './pages/homepage/homepage.pages';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'Hello ashwin'
-    }
-  }
 
-  render() {
-    return (
-      <div className="App">
-        <p>{this.state.name}</p>
-        <button onClick = {() => this.setState({name: 'pristina'})} >Change Text</button>
-    </div> 
-    )
-  }
+function App() {
+  return (
+    <div>
+      <HomePage />
+     </div>
+  )
 }
-
 export default App;
