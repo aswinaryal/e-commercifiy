@@ -10,9 +10,9 @@ import CollectionItem from '../collection-item/collection-item.component';
             <div className="preview">
                 {items
                 .filter((item,idx) => idx < 4)
-                .map(({id, ...othereProps})  => {
+                .map((item)  => {
                     return (
-                        <CollectionItem key={id} {...othereProps} />
+                        <CollectionItem key={item.id} item={item} />
                     )  
                 })
                 }
